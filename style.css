@@ -1,0 +1,138 @@
+body {
+  font-family: "Merriweather", sans-serif;
+  height: 100vh;
+  background-color: #323b40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meta_container {
+  display: grid;
+  width: 1600px;
+}
+
+.title {
+  padding-top: 90px;
+  font-size: 70px;
+  justify-content: center;
+  color: #efcf4e;
+}
+
+.presentors {
+  display: grid;
+  grid-template-rows: 80px 80px 80px 80px;
+  grid-template-columns: 300px repeat(8, minmax(15px, 200px));
+  font-size: 50px;
+  color: #efcf4e;
+  border: 1px solid #efcf4e;
+  margin: 0px 50px 50px 50px;
+  grid-template-areas:
+    "line-1   line-1   line-1   line-1   line-1   line-1   line-1   line-1   line-1"
+    "line-2   line-2   line-2   line-2   line-2   line-2   line-2   line-2   line-2"
+    "line-3   line-3   line-3   line-3   line-3   line-3   line-3   line-3   line-3"
+    "line-4   total-DD   total-DD   total-DD   total-DD   total-DD   total-DD   total-DD   total-DD";
+}
+
+.total__dd {
+  grid-area: total-DD;
+}
+
+.rows {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 1px 1px 1px 1px;
+  border: 1px solid #efcf4e;
+}
+
+.buttons {
+  display: grid;
+  grid-template-rows: repeat(6, 80px);
+  grid-template-columns: repeat(9, 110px);
+  grid-column-gap: 8px;
+  width: auto;
+  height: auto;
+  justify-content: center;
+}
+
+.button {
+  all: unset;
+  background-color: #323b40;
+  font-size: 20px;
+  color: #efcf4e;
+  border: 2px solid #efcf4e;
+  border-radius: 50%;
+  padding: 2.5px;
+  box-sizing: border-box;
+  min-width: 20px;
+  max-width: 100px;
+  height: 60px;
+  text-align: center;
+}
+
+.delete_button {
+  border: none;
+  grid-row: 2/2;
+  grid-column: 1/1;
+  align-items: center;
+  border-image: round;
+  margin-right: 30px;
+}
+
+.delete_button:hover {
+  width: 85px;
+  height: 55px;
+  box-shadow: none !important;
+}
+
+.delete_icon {
+  height: 50px;
+  width: 80px;
+}
+
+.delete_icon:hover {
+  width: 82px;
+  height: 52px;
+  box-shadow: none !important;
+}
+
+.reset_button {
+  grid-row: 1/6;
+  grid-column: 1/1;
+}
+
+.RO {
+  grid-row: 1/1;
+  grid-column: 2/2;
+}
+
+.flic {
+  grid-row: 2/2;
+  grid-column: 2/2;
+}
+
+.whip {
+  grid-row: 3/3;
+  grid-column: 2/2;
+}
+
+.place_holder {
+  grid-row: 4/6;
+  grid-column: 2/2;
+}
+
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px #efcf4e;
+  font-size: 25px;
+}
+
+.titles {
+  justify-content: start;
+}
+
+.photo {
+  width: 1500px;
+  justify-self: center;
+}
