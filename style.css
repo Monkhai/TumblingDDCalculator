@@ -180,6 +180,7 @@ body {
   .presentors {
     width: 300px;
     display: grid;
+    margin-bottom: 25px;
     grid-template-rows: repeat(8, 1fr);
     grid-template-columns: repeat(3, 1fr);
     font-size: 20px;
