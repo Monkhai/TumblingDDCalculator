@@ -166,6 +166,8 @@ body {
     font-size: 25px;
     align-self: center;
     justify-self: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
   }
 
   .photo {
@@ -180,7 +182,7 @@ body {
     display: grid;
     grid-template-rows: repeat(8, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    font-size: 25px;
+    font-size: 20px;
     color: #efcf4e;
     border: 1px solid #efcf4e;
     /* margin: 0px 50px 50px 50px; */
