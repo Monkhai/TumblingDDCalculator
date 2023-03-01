@@ -9,20 +9,35 @@ body {
 
 .meta_container {
   display: grid;
-  width: 1000px;
+  width: 95%;
+  height: 95%;
+  justify-items: center;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: minmax(500px, 1fr);
 }
 
 .title {
   padding-top: 90px;
   font-size: 70px;
-  justify-content: center;
+  justify-self: center;
   color: #efcf4e;
+  height: 100px;
+  width: 90%;
+  text-size-adjust: auto;
+}
+
+.photo {
+  width: 70%;
+  justify-self: center;
+  margin-top: auto;
 }
 
 .presentors {
   display: grid;
-  grid-template-rows: 50px 50px 50px 50px;
-  grid-template-columns: 200px repeat(8, minmax(15px, 100px));
+  justify-self: center;
+  width: 70%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 150px repeat(8, 1fr);
   font-size: 30px;
   color: #efcf4e;
   border: 1px solid #efcf4e;
@@ -73,7 +88,6 @@ body {
 
 .button:hover {
   cursor: pointer;
-  box-shadow: 0 0 5px #efcf4e;
   font-size: 18px;
 }
 
@@ -131,7 +145,133 @@ body {
   justify-content: start;
 }
 
-.photo {
-  width: 900px;
-  justify-self: center;
+@media (max-width: 780px) {
+  body.body {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+  }
+  .meta_container {
+    width: 70%;
+    height: 70%;
+    display: grid;
+  }
+
+  .title {
+    font-size: medium;
+    align-self: start;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .titles {
+    display: none;
+  }
+  .presentors {
+    width: 300px;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    font-size: minman(10px, 60px);
+    color: #efcf4e;
+    border: 1px solid #efcf4e;
+    /* margin: 0px 50px 50px 50px; */
+    grid-template-areas:
+      "skill-1    value-1    number-1"
+      "skill-2    value-2    number-2"
+      "skill-3    value-3    number-3"
+      "skill-4    value-4    number-4"
+      "skill-5    value-5    number-5"
+      "skill-6    value-6    number-6"
+      "skill-7    value-7    number-7"
+      "skill-8    value-8    number-8"
+      "total-DD   total-DD   total-DD";
+  }
+
+  .buttons {
+    align-self: flex-end;
+    display: grid;
+  }
+
+  .sk1 {
+    grid-area: skill-1;
+  }
+  .sk2 {
+    grid-area: skill-2;
+  }
+  .sk3 {
+    grid-area: skill-3;
+  }
+  .sk4 {
+    grid-area: skill-4;
+  }
+  .sk5 {
+    grid-area: skill-5;
+  }
+  .sk6 {
+    grid-area: skill-6;
+  }
+  .sk7 {
+    grid-area: skill-7;
+  }
+  .sk8 {
+    grid-area: skill-8;
+  }
+
+  /**/
+
+  .sv1 {
+    grid-area: number-1;
+  }
+  .sn2 {
+    grid-area: number-2;
+  }
+  .sn3 {
+    grid-area: number-3;
+  }
+  .sn4 {
+    grid-area: number-4;
+  }
+  .sn5 {
+    grid-area: number-5;
+  }
+  .sn6 {
+    grid-area: number-6;
+  }
+  .sn7 {
+    grid-area: number-7;
+  }
+  .sn8 {
+    grid-area: number-8;
+  }
+
+  /**/
+
+  .sv1 {
+    grid-area: value-1;
+  }
+  .sv2 {
+    grid-area: value-2;
+  }
+  .sv3 {
+    grid-area: value-3;
+  }
+  .sv4 {
+    grid-area: value-4;
+  }
+  .sv5 {
+    grid-area: value-5;
+  }
+  .sv6 {
+    grid-area: value-6;
+  }
+  .sv7 {
+    grid-area: value-7;
+  }
+  .sv8 {
+    grid-area: value-8;
+  }
 }
