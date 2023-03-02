@@ -137,7 +137,7 @@ body {
 }
 
 .place_holder {
-  grid-row: 4/6;
+  grid-row: 3/3;
   grid-column: 2/2;
 }
 
@@ -201,9 +201,10 @@ body {
 
   .buttons {
     display: grid;
-    grid-template-columns: 42px repeat(6, 35px);
-    grid-template-rows: repeat(7 1fr);
+    grid-template-columns: 60px repeat(6, 35px);
+    grid-template-rows: repeat(5, 1fr) !important;
     justify-self: center;
+    justify-items: center;
   }
 
   .button {
@@ -222,16 +223,16 @@ body {
 
   .button:hover {
     cursor: pointer;
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .delete_button {
     border: none;
-    grid-row: 2/8;
+    grid-row: 5/5;
     grid-column: 1/1;
-    align-items: center;
+    justify-content: start;
     border-image: round;
-    width: 45px;
+    width: 50px;
     height: 45px;
   }
 
@@ -240,8 +241,8 @@ body {
   }
 
   .delete_icon {
-    height: 25px;
-    width: 40px;
+    height: 30px;
+    width: 45px;
   }
 
   .delete_icon:hover {
@@ -251,22 +252,22 @@ body {
   }
 
   .reset_button {
-    grid-row: 1/6;
+    grid-row: 1/1;
     grid-column: 1/1;
   }
 
   .RO {
-    grid-row: 3/3;
+    grid-row: 2/2;
     grid-column: 1/1;
   }
 
   .flic {
-    grid-row: 4/4;
+    grid-row: 3/3;
     grid-column: 1/1;
   }
 
   .whip {
-    grid-row: 5/5;
+    grid-row: 4/4;
     grid-column: 1/1;
   }
 
