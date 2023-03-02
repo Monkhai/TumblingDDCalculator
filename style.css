@@ -146,6 +146,10 @@ body {
 }
 
 @media (max-width: 780px) {
+  * {
+    touch-action: manipulation;
+  }
+
   body {
     display: flex;
     justify-content: center;
@@ -241,13 +245,13 @@ body {
   }
 
   .delete_icon {
-    height: 30px;
-    width: 45px;
+    height: 25px;
+    width: 40px;
   }
 
   .delete_icon:hover {
-    width: 55px;
-    height: 40px;
+    height: 27px;
+    width: 43px;
     box-shadow: none !important;
   }
 
