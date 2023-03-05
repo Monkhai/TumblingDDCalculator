@@ -218,6 +218,7 @@ body {
     grid-template-columns: 60px repeat(6, 40px);
     grid-template-rows: repeat(5, 2fr) !important;
     grid-row-gap: 2px;
+    grid-column-gap: 8px;
     justify-self: center;
     justify-items: center;
   }
