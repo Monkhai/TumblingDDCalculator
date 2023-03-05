@@ -1,9 +1,11 @@
-const buttonsEl = document.querySelectorAll(".skill__button");
+const skillButtonEl = document.querySelectorAll(".skill__button");
+const buttonContainerEl = document.querySelector(".buttons");
 const skillValuesEl = document.querySelectorAll(".skill__value");
 const skillNamesEl = document.querySelectorAll(".skill__name");
 const calcEl = document.querySelector(".total__dd");
 const deleteBtnEl = document.querySelector(".delete_button");
 const resetBtnEl = document.querySelector(".reset_button");
+const addBtnEl = document.querySelector(".add_button");
 
 // This sets the value of each skillValue element to 0. This allows the total difficulty to calculate difficulty of not finished passes.
 skillValuesEl.forEach((skillValue) => {
@@ -14,7 +16,7 @@ skillValuesEl.forEach((skillValue) => {
 let skillIndex = 0;
 
 // Add a click event listener to each button
-buttonsEl.forEach((button) => {
+skillButtonEl.forEach((button) => {
   button.addEventListener("click", function () {
     // Set the text content of the current skill value span
     skillValuesEl[skillIndex].textContent = button.value;
@@ -36,7 +38,7 @@ buttonsEl.forEach((button) => {
 
     // If filled all 8 skill values, disable buttons
     if (skillIndex >= skillValuesEl.length) {
-      buttonsEl.disable = true;
+      skillButtonEl.disable = true;
     }
   });
 });
@@ -79,3 +81,12 @@ resetBtnEl.addEventListener("click", function () {
   // Update the total difficulty element// .toFixed is what forces calc to show the number only with 1 digit after the decimal point
   calcEl.textContent = totalDifficulty.toFixed(1);
 });
+
+// addBtnEl.addEventListener("click", () => {
+//   const newButton = document.createElement("button");
+//   newButton.textContent = "New Button";
+//   newButton.classList.add("button");
+
+//   // Add the new button to the page
+//   buttonContainerEl.appendChild(newButton);
+// });

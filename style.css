@@ -18,7 +18,7 @@ body {
 
 .title {
   padding-top: 10px;
-  font-size: 70px;
+  font-size: 5vw;
   justify-self: center;
   color: #efcf4e;
   height: 100px;
@@ -65,10 +65,10 @@ body {
   display: grid;
   grid-template-rows: repeat(6, 70px);
   grid-template-columns: repeat(9, 70px);
-  grid-column-gap: 8px;
   width: auto;
   height: auto;
   justify-content: center;
+  justify-items: center;
 }
 
 .button {
@@ -80,8 +80,7 @@ body {
   border-radius: 50%;
   padding: 2.5px;
   box-sizing: border-box;
-  min-width: 20px;
-  max-width: 60px;
+  width: 60px;
   height: 60px;
   text-align: center;
 }
@@ -95,10 +94,11 @@ body {
   border: none;
   grid-row: 2/2;
   grid-column: 1/1;
+  justify-self: center;
+  align-self: center;
   align-items: center;
   border-image: round;
-  width: 60px;
-  height: 60px;
+  justify-content: start;
 }
 
 .delete_button:hover {
@@ -106,6 +106,8 @@ body {
 }
 
 .delete_icon {
+  justify-self: start;
+  align-self: center;
   height: 35px;
   width: 50px;
 }
@@ -136,8 +138,16 @@ body {
   grid-column: 2/2;
 }
 
+/* .add_button {
+  grid-row: 3 / 3 !important;
+  grid-column: 1 / 1;
+  border-radius: 0% 0% 0% 0%;
+  height: 140px;
+  width: 60px;
+} */
+
 .place_holder {
-  grid-row: 3/3;
+  grid-row: 4/4;
   grid-column: 2/2;
 }
 
@@ -208,7 +218,6 @@ body {
     grid-template-columns: 60px repeat(6, 40px);
     grid-template-rows: repeat(5, 2fr) !important;
     grid-row-gap: 2px;
-    font-weight: bolder;
     justify-self: center;
     justify-items: center;
   }
